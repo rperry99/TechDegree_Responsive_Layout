@@ -17,6 +17,10 @@ body {
   width: 80%;
   margin: 0 auto;
 }
+header p.name {
+  font-size: 1.3em;
+  font-weight: bold;
+}
 .portfolio-img,
 .profile-img {
   max-width: 100%;
@@ -26,7 +30,9 @@ body {
 }
 h2 {
   font-family: "Lobster", sans-serif;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  color: tomato;
+  font-size: 2em;
   margin: 20px 0;
 }
 a {
@@ -77,10 +83,23 @@ main {
   padding: 10px;
 }
 .card-title {
-  font-size: 18px;
+  font-size: 1.2em;
   font-weight: bold;
   margin: 20px 0 10px 0;
   display: block;
+}
+
+/* Skills */
+#skills {
+  margin-bottom: 30px;
+}
+#skills p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+#skills ul {
+  list-style: none;
 }
 
 /* Contact */
@@ -99,8 +118,93 @@ footer p {
   float: left;
   padding: 20px;
 }
-
 footer a {
   float: right;
   padding: 20px;
+}
+.large-footer-nav {
+  display: none;
+}
+
+/* Tablet Media Query */
+@media (min-width: 768px) {
+  header {
+    margin-top: 50px;
+  }
+  nav ul li {
+    display: inline-block;
+    padding: 2em;
+  }
+  a:hover {
+    color: tomato;
+  }
+  .profile-img {
+    float: right;
+    width: 40%;
+  }
+  #about-me p {
+    width: 60%;
+    float: left;
+    text-align: left;
+  }
+  .card {
+    width: 50%;
+    float: left;
+  }
+  #contact {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .back-to-top {
+    display: none;
+  }
+  .large-footer-nav {
+    display: block;
+    float: right;
+  }
+  .large-footer-nav ul {
+    margin: 0;
+    padding: 0;
+  }
+  .large-footer-nav ul li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+}
+/* Bigger Monitor Media Query */
+@media (min-width: 1024px) {
+  header nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+  }
+  header nav ul li {
+    display: inline-block;
+    padding: 20px 0 20px 20px;
+    margin: 0;
+    font-weight: bold;
+  }
+  header p.name {
+    margin: 0;
+    padding: 20px 20px 20px 0;
+    float: left;
+  }
+  .card {
+    width: 33.333%;
+  }
+  #skills div.card {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  #contact {
+    width: 60%;
+  }
+}
+
+/* Clearfix */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }

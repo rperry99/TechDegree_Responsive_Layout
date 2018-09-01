@@ -9,16 +9,21 @@
 
 <body>
     <header>
-        <h1>Russ Perry</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="clearfix">
+            <div class="container">
+                <nav>
+                    <p class="name">Russ Perry</p>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
         <!-- About Me -->
-        <div class="container" id='about-me'>
+        <div class="container clearfix" id='about-me'>
             <img src="img/responsive-layout-profile.png" alt="Placeholder image of Russ" class='profile-img'>
             <p>Hi, My name is Russ. I am an aspiring front end web developer. I have a Bachelor's Degree in software development
                 from Kent State University. I am currently working on the Treehouse Techdegree program for front end web
@@ -29,7 +34,7 @@
     <main>
         <div class="container">
             <!-- Portfolio -->
-            <section id="portfolio">
+            <section id="portfolio" class='clearfix'>
                 <h2>Portfolio</h2>
                 <div class="card">
                     <img src="img/portfolio-1.png" alt="Placeholder for Portfolio Item 1" class='portfolio-img'>
@@ -73,6 +78,28 @@
                 </div>
             </section> <!-- End #portfolio -->
 
+            <section id="skills" class='clearfix'>
+                <h2>Skills</h2>
+                <div class="card">
+                    <p>Some skills I have</p>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Git &amp; GitHub</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <p>Skills I want to learn &amp; practice</p>
+                    <ul>
+                        <li>Design</li>
+                        <li>React</li>
+                        <li>SEO</li>
+                        <li>Deployment</li>
+                    </ul>
+                </div>
+            </section>
+
             <section id="contact">
                 <h2>Contact</h2>
                 <p>If you are interested in chatting or want more information about what I've been working on, I'd love to
@@ -88,9 +115,17 @@
 
 
 
-    <footer>
+    <footer class='clearfix'>
         <p class="name">Russ Perry</p>
         <a href="#top" class="back-to-top">Back to top</a>
+        <nav class='large-footer-nav'>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 
